@@ -1,0 +1,47 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:#fff;font-family:"DM Sans",sans-serif;background:linear-gradient(145deg,#f883b2,#ffb7d3,#ef6c9e);overflow-x:hidden}
+#heartsCanvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:5}
+body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 15% 10%,#ffd6e6 0 3%,transparent 22%),radial-gradient(circle at 85% 35%,#ff75aa 0 4%,transparent 25%)}
+.loading{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:#ffabc9;transition:.7s}
+.loading.hide{opacity:0;visibility:hidden}
+.loader-heart{font-size:60px;animation:pulse 1s infinite}
+.loading p{position:absolute;margin-top:120px;font-size:11px;letter-spacing:2px;text-transform:uppercase}
+.logo{position:fixed;top:25px;left:6vw;font:21px Pacifico,cursive;z-index:10}
+.hero,.story,.question,.success{min-height:100vh;position:relative}
+.hero,.question,.success{display:grid;place-items:center;text-align:center;padding:90px 22px}
+.hero-content{max-width:850px}
+.eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:700;opacity:.8}
+.hero h1{font-size:clamp(48px,9vw,105px);line-height:.98;letter-spacing:-4px;margin:20px 0}
+.hero h1 span,.question h2 span,.success h2 span{font-family:Pacifico,cursive;font-weight:400;letter-spacing:0}
+.intro{max-width:590px;margin:25px auto;line-height:1.8}
+.start-btn,.yes,.message-box button{border:0;border-radius:100px;padding:16px 25px;background:#fff;color:#d5296d;font-weight:700;cursor:pointer;box-shadow:0 10px 35px #8f164d55}
+.story{padding:140px 8vw;background:#d94d8966}
+.story-card{max-width:620px;margin:0 0 180px;padding-left:30px;border-left:2px solid #ffffff55}
+.story-card.right{margin-left:auto;text-align:right;border-left:0;border-right:2px solid #ffffff55;padding:0 30px 0 0}
+.story-card small{letter-spacing:3px;opacity:.6}
+.script{font:25px Pacifico,cursive}
+.story h2{font-size:clamp(38px,6vw,68px);line-height:1.02}
+.story h2 em{font-family:Pacifico,cursive;font-weight:400}
+.story-card>p:last-child{line-height:1.8;opacity:.82}
+.question{background:radial-gradient(circle,#ff82b2,#e74f8d 75%)}
+.question-wrap{max-width:700px}
+.tiny-heart{font-size:42px;animation:pulse 1.4s infinite}
+.question h2,.success h2{font-size:clamp(50px,10vw,105px);line-height:.92;letter-spacing:-5px;margin:15px 0 25px}
+.choices{height:150px;position:relative;display:flex;justify-content:center;align-items:center;gap:15px;margin-top:20px}
+.no{border:1px solid #ffffff66;border-radius:100px;padding:16px 25px;background:#ffffff22;color:#fff;cursor:pointer}
+.success{display:none;background:radial-gradient(circle,#ff78aa,#d63878)}
+.success.show{display:grid}
+.message-box{max-width:500px;margin:30px auto;padding:28px;border:1px solid #ffffff55;border-radius:25px;background:#ffffff18;backdrop-filter:blur(15px)}
+.message-box h3{margin:0 0 8px;font-size:22px}
+.message-box p{margin:8px 0 16px}
+.message-box textarea{width:100%;min-height:130px;padding:16px;border:0;border-radius:18px;resize:vertical;outline:0;font:15px "DM Sans",sans-serif;margin:10px 0 14px}
+.message-box button{box-shadow:none}
+.reveal{opacity:0;transform:translateY(35px);transition:1s}
+.reveal.visible{opacity:1;transform:none}
+@keyframes pulse{50%{transform:scale(1.15)}}
+@media(max-width:600px){
+ .story{padding:100px 24px}
+ .story-card,.story-card.right{text-align:left;border-left:2px solid #ffffff55;border-right:0;padding:0 0 0 20px;margin-bottom:120px}
+ .question h2,.success h2{letter-spacing:-2px}
+}
