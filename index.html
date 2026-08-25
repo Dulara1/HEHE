@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="theme-color" content="#ff4f91">
+  <meta name="description" content="A little question from someone who likes you very much.">
+  <title>A Little Question For You 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="heartsCanvas"></canvas>
+  <div class="grain"></div>
+
+  <div class="loading" id="loading">
+    <div class="loader-heart">♥</div>
+    <p>opening something special...</p>
+  </div>
+
+  <main id="app">
+    <nav class="nav">
+      <div class="logo">for you <span>♡</span></div>
+      <button class="music-btn" id="musicBtn" aria-label="Toggle music">♪</button>
+    </nav>
+
+    <section class="hero" id="hero">
+      <div class="glow g1"></div><div class="glow g2"></div>
+      <div class="floating-heart fh1">♡</div>
+      <div class="floating-heart fh2">♡</div>
+      <div class="floating-heart fh3">♡</div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow">I made this just for you</p>
+        <h1>There is something<br><span>I want to ask you...</span></h1>
+        <p class="intro">
+          This isn't a normal message, because you're not a normal person to me.
+          So I thought I'd make something a little more special.
+        </p>
+        <button class="start-btn" id="startBtn">
+          <span>open my heart</span>
+          <b>↓</b>
+        </button>
+      </div>
+
+      <div class="scroll-note">scroll slowly ♡</div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="story-card reveal">
+        <span class="number">01</span>
+        <p class="script">Maybe you don't know this...</p>
+        <h2>But somehow,<br><em>you became my favorite thought.</em></h2>
+        <p>
+          Somewhere between the little conversations, the smiles,
+          and all those tiny moments, I started liking you more than I expected.
+        </p>
+      </div>
+
+      <div class="story-card right reveal">
+        <span class="number">02</span>
+        <p class="script">And honestly...</p>
+        <h2>I kept thinking,<br><em>"Should I tell her?"</em></h2>
+        <p>
+          I could keep it to myself. But then I'd always wonder what could have happened
+          if I had just been brave enough to ask.
+        </p>
+      </div>
+
+      <div class="story-card reveal">
+        <span class="number">03</span>
+        <p class="script">So here goes...</p>
+        <h2>One little question.<br><em>One honest answer.</em></h2>
+      </div>
+    </section>
+
+    <section class="question-section" id="question">
+      <div class="question-wrap reveal">
+        <div class="tiny-heart">♥</div>
+        <p class="eyebrow">okay... deep breath</p>
+        <h2>Will you be<br><span>my person?</span></h2>
+        <p class="question-sub">No pressure. Just an honest question from someone who really likes you. ♡</p>
+
+        <div class="choice-area" id="choiceArea">
+          <button class="yes-btn" id="yesBtn">YES, I WILL 💗</button>
+          <button class="no-btn" id="noBtn">maybe later</button>
+        </div>
+        <p class="tiny-note" id="tinyNote">choose wisely 👀</p>
+      </div>
+    </section>
+
+    <section class="success" id="success">
+      <div class="success-inner">
+        <div class="burst">✦</div>
+        <p class="eyebrow">you said yes</p>
+        <h2>YOU JUST MADE<br><span>MY WHOLE DAY. 💗</span></h2>
+        <p>
+          I don't even know what to say now... except<br>
+          <strong>I'm really, really happy.</strong>
+        </p>
+        <div class="love-card">
+          <div class="mini-heart">♡</div>
+          <p>Maybe this is the beginning<br>of something beautiful.</p>
+        </div>
+        <button class="replay" id="replayBtn">read it again ↻</button>
+      </div>
+    </section>
+
+    <footer>made with courage, pixels & a ridiculous amount of love ♡</footer>
+  </main>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
